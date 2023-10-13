@@ -1,0 +1,5 @@
+# Utilizamos jetty para correr la web application
+FROM jetty:12.0.2-jre17-alpine AS deploy
+
+# Copiamos el artefacto generado en la instancia de compilacion
+COPY target/jakartaee-hello-world.war /usr/local/jetty/webapps/ROOT.war
