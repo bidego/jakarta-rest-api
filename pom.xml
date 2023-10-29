@@ -21,6 +21,7 @@
 		<compiler-plugin.version>3.11.0</compiler-plugin.version>
 		<war-plugin.version>3.3.2</war-plugin.version>
 		<payara-micro-plugin.version>2.0</payara-micro-plugin.version>
+	    <mongodb-driver-sync.version>4.5.1</mongodb-driver-sync.version>
 	</properties>
 
 	<dependencies>
@@ -29,6 +30,42 @@
 			<artifactId>jakarta.jakartaee-web-api</artifactId>
 			<version>${jakartaee-api.version}</version>
 			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.microprofile/microprofile -->
+		<dependency>
+			<groupId>org.eclipse.microprofile</groupId>
+			<artifactId>microprofile</artifactId>
+			<version>4.0</version>
+			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/jakarta.security.enterprise/jakarta.security.enterprise-api -->
+		<dependency>
+			<groupId>jakarta.security.enterprise</groupId>
+			<artifactId>jakarta.security.enterprise-api</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+		</dependency>
+
+	    <!--dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-sync</artifactId>
+			<version>${mongodb-driver-sync.version}</version>
+		</dependency -->
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+		<!-- dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.14</version>
+		</dependency -->
+		<dependency>
+			<groupId>dev.morphia.morphia</groupId>
+			<artifactId>morphia-core</artifactId>
+			<version>2.3.0</version>
 		</dependency>
 		<!-- Embedded Jakarta EE runtime -->
 		<dependency>
